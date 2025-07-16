@@ -3,7 +3,6 @@
 import { Canvas } from '@react-three/fiber'
 import { OrbitControls, useGLTF } from '@react-three/drei'
 import { Suspense } from 'react'
-import * as THREE from 'three'
 
 function NgoMon() {
     const { scene } = useGLTF('/models/ngo-mon.glb')
