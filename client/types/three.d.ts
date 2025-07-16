@@ -34,3 +34,14 @@ declare module 'three/examples/jsm/loaders/DRACOLoader' {
         dispose(): void
     }
 }
+
+// src/types/three-rect-helper.d.ts
+declare module 'three/examples/jsm/helpers/RectAreaLightHelper' {
+    import { Object3D, ColorRepresentation, RectAreaLight } from 'three'
+
+    export class RectAreaLightHelper extends Object3D {
+        constructor(light: RectAreaLight, color?: ColorRepresentation)
+        dispose(): void
+    }
+}
+
