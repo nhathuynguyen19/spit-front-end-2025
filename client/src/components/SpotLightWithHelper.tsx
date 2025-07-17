@@ -2,8 +2,8 @@
 "use client";
 
 import { useRef, useEffect } from "react";
-import { SpotLightHelper } from "three";
-import { useHelper } from "@react-three/drei";
+// import { SpotLightHelper } from "three";
+// import { useHelper } from "@react-three/drei";
 import { SpotLight } from "three";
 
 type SpotLightProps = {
@@ -23,8 +23,8 @@ export default function SpotLightWithHelper({
   target_posx,
   target_posy,
   target_posz,
-  helper = true,
-}: SpotLightProps) {
+}: // helper = true,
+SpotLightProps) {
   const spotRef = useRef<SpotLight>(null!);
 
   // Cập nhật target đúng hướng
@@ -39,9 +39,9 @@ export default function SpotLightWithHelper({
     }
   }, [target_posx, target_posy, target_posz]);
 
-  if (helper) {
-    useHelper(spotRef, SpotLightHelper, "hotpink"); // helper màu hồng
-  }
+  // if (helper) {
+  //   useHelper(spotRef, SpotLightHelper, "hotpink"); // helper màu hồng
+  // }
 
   return (
     <spotLight

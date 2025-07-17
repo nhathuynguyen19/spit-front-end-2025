@@ -1,16 +1,17 @@
 "use client";
 
 import { Canvas } from "@react-three/fiber";
-import { OrbitControls, useGLTF } from "@react-three/drei";
+import { useGLTF } from "@react-three/drei";
+// import { OrbitControls } from "@react-three/drei";
 import { Suspense } from "react";
-import { RectAreaLight } from "three";
-import { useRef } from "react";
-import { useHelper } from "@react-three/drei";
-import { RectAreaLightHelper } from "three/examples/jsm/helpers/RectAreaLightHelper";
+// import { RectAreaLight } from "three";
+// import { useRef } from "react";
+// import { useHelper } from "@react-three/drei";
+// import { RectAreaLightHelper } from "three/examples/jsm/helpers/RectAreaLightHelper";
 import SpotLightWithHelper from "@/components/SpotLightWithHelper";
 import React from "react";
-import CameraControl from "@/components/CameraControl";
-import { PresentationControls } from "@react-three/drei";
+// import CameraControl from "@/components/CameraControl";
+// import { PresentationControls } from "@react-three/drei";
 import { Fragment } from "react";
 
 function NgoMon() {
@@ -18,26 +19,26 @@ function NgoMon() {
   return <primitive object={scene} />;
 }
 
-function AreaLight() {
-  const lightRef = useRef<RectAreaLight>(null!);
-  useHelper(lightRef, RectAreaLightHelper, "cyan");
-  return (
-    <rectAreaLight
-      ref={lightRef}
-      intensity={1000}
-      width={0.01}
-      height={0.5}
-      color="white"
-      position={[-2.1, 0, 1.8]}
-      rotation={[-Math.PI / -2, 0, 0]} // xoay để nhìn xuống
-    />
-  );
-}
+// function AreaLight() {
+//   const lightRef = useRef<RectAreaLight>(null!);
+//   useHelper(lightRef, RectAreaLightHelper, "cyan");
+//   return (
+//     <rectAreaLight
+//       ref={lightRef}
+//       intensity={1000}
+//       width={0.01}
+//       height={0.5}
+//       color="white"
+//       position={[-2.1, 0, 1.8]}
+//       rotation={[-Math.PI / -2, 0, 0]} // xoay để nhìn xuống
+//     />
+//   );
+// }
 
-function SpotLight() {}
+// function SpotLight() {}
 
 export default function NgoMonModel() {
-  const lightRef = useRef<RectAreaLight>(null!);
+  // const lightRef = useRef<RectAreaLight>(null!);
 
   return (
     <Canvas

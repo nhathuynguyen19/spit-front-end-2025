@@ -1,7 +1,7 @@
 "use client";
 
 import dynamic from "next/dynamic";
-import Button from "@/components/Button";
+// import Button from "@/components/Button";
 
 const NgoMonModel = dynamic(() => import("@/components/NgoMon"), {
   ssr: false,
