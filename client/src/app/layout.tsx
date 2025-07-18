@@ -1,17 +1,40 @@
-import { ReactNode } from "react";
+import type { Metadata } from "next";
+import { Geist, Geist_Mono, Merriweather } from "next/font/google";
+import "./globals.css";
 
-export const metadata = {
+const geistSans = Geist({
+  variable: "--font-geist-sans",
+  subsets: ["latin"],
+});
+
+const merriweather = Merriweather({
+  subsets: ["latin"],
+  variable: "--font-merriweather",
+  weight: ["400", "700"], // tuỳ nhu cầu
+});
+
+const geistMono = Geist_Mono({
+  variable: "--font-geist-mono",
+  subsets: ["latin"],
+});
+
+export const metadata: Metadata = {
   title: "Festival Huế 2025",
-  decription: "Landing page Festival Huế 2025 - Làng nghề, Ẩm thực, Nghệ thuật",
+  description:
+    "Landing page Festival Huế 2025 - Làng nghề, Ẩm thực, Nghệ thuật",
 };
 
-export default function RootLayout({ children }: { children: ReactNode }) {
+export default function RootLayout({
+  children,
+}: Readonly<{
+  children: React.ReactNode;
+}>) {
   return (
-    <html lang="vi">
-      <body className="bg-[#f9f7f1] font-sans scroll-smooth">
-        {/* Có thể thêm Navbar ở đây nếu muốn */}
+    <html lang="en">
+      <body
+        className={`${geistSans.variable} ${geistMono.variable} ${merriweather.variable} font-sans antialiased`}
+      >
         {children}
-        {/* Footer cố định hoặc dynamic */}
       </body>
     </html>
   );
