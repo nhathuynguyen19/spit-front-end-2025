@@ -5,6 +5,7 @@ import NgoMonModel from "../components/NgoMon";
 // import NavBar from "../components/NavBar";
 import { motion } from "framer-motion";
 import AnimatedText from "../components/SolganFade";
+import NavBar from "../components/NavBar";
 // import dynamic from "next/dynamic";
 
 // const NgoMonModel = dynamic(() => import("@/app/components/NgoMon"), {
@@ -43,11 +44,15 @@ const Header = () => {
   }, []);
 
   return (
-    <section className="relative w-full h-screen flex justify-center items-center items-end overflow-hidden min-h-[390px]">
+    <section
+      id="trang-chu"
+      className="relative w-full h-screen flex justify-center items-center overflow-hidden items-end min-h-[390px]"
+    >
+      <NavBar />
       <img
         ref={mountainRef}
         className="absolute top-0 w-full"
-        src="/images/sky1-crop.jpg"
+        src="/images/sky1.jpg"
         alt="sky"
       />
 
@@ -61,7 +66,7 @@ const Header = () => {
         <NgoMonModel />
       </motion.div>
       <img
-        className="absolute top-0 w-screen z-20 h-[100vh] object-cover mx-auto min-h-[360px]"
+        className="absolute bottom-0 w-full z-20 h-[100vh] object-cover mx-auto min-h-[360px]"
         ref={riverRef}
         src="/images/tuong-truoc-ngo-mon.png"
         alt="truoc ngo mon"
@@ -73,13 +78,15 @@ const Header = () => {
         initial={{ opacity: 0, y: 30 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.8, ease: "easeOut" }}
-        className="absolute z-10 w-screen text-center"
+        className="absolute z-10 w-full text-center"
       >
-        <h1 className="text-3xl md:text-5xl sm:text-4xl font-sans font-bold tracking-wider text-white">
+        <h1 className="text-3xl md:text-5xl sm:text-4xl font-playfair font-bold tracking-wider text-white">
           Festival Hue 2025
         </h1>
         <AnimatedText />
       </motion.div>
+
+      <div className="absolute z-20 bottom-0 left-0 w-full h-8 bg-gradient-to-b from-transparent to-[#F8B55F] pointer-events-none"></div>
     </section>
   );
 };

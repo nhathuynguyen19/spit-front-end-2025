@@ -12,8 +12,12 @@ module.exports = {
     extend: {
       fontFamily: {
         geist: ['"Geist"', 'sans-serif'],
-        sans: ["var(--font-merriweather)", "sans-serif"]
+        sans: ["var(--font-merriweather)", "sans-serif"],
+        playfair: ['"Playfair Display"', 'serif']
       },
+      backgroundColor : {
+        'gach-nen-ngo-mon': '#86846F'
+      }
     },
   },
   plugins: [],
