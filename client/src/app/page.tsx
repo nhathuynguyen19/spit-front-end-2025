@@ -4,6 +4,7 @@ import Header from "@/app//header/page";
 // import dynamic from "next/dynamic";
 // import Button from "./components/Button";
 import NavBar from "./components/NavBar";
+import NgheThuat from "./nghe-thuat/page";
 // import AnimatedText from "@/app/components/SolganFade";
 
 // const NgoMonModel = dynamic(() => import("./components/NgoMon"), {
@@ -19,8 +20,9 @@ export default function Home() {
       {/* <NgoMonModel /> */}
       {/* <img src="/images/tuong-truoc-ngo-mon.png" alt="" /> */}
 
-      <NavBar />
-      <Header />
+      {/* <NavBar /> */}
+      {/* <Header /> */}
+      <NgheThuat />
     </main>
   );
 }
