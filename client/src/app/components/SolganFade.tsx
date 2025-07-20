@@ -4,11 +4,11 @@ import { motion, AnimatePresence } from "framer-motion";
 import { useState, useEffect } from "react";
 
 const messages = [
-  "Kinh Đô Xưa, Vận Hội Mới",
-  "Visit Hue - VietNam",
-  "Hưởng Ứng Năm Du Lịch Quốc Gia",
-  "Nơi Hiện Đại Và Truyền Thống Giao Thoa",
-  "Khám Phá Di Sản Văn Hóa",
+  "Kinh Đô Xưa - Vận Hội Mới",
+  "Visit Hue - Vietnam",
+  "The Year of Vietnamese Journeys",
+  "Hồn Xưa Giữa Thời Nay",
+  "Di Sản - Văn Hóa",
 ];
 
 export default function AnimatedText() {
@@ -46,7 +46,10 @@ export default function AnimatedText() {
   };
 
   return (
-    <div className="h-12 text-1xl md:text-2xl sm:text-2xl overflow-hidden en flex items-center justify-center font-sans font-bold text-[#F8B55F]">
+    <div
+      style={{ textShadow: "2px 2px 4px rgba(0,0,0,0.7)" }}
+      className="absolute left-1/2 z-40 select-none -translate-x-1/2 top-1/2 -translate-y-1/2 h-12 text-3xl overflow-hidden z-10 en flex items-center justify-center font-greatvibes font-bold text-[#F8B55F]"
+    >
       <AnimatePresence mode="wait">
         {show && (
           <motion.div

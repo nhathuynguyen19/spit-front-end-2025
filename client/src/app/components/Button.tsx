@@ -9,7 +9,8 @@ interface ButtonProps {
 const Button = ({ children, idName = "" }: ButtonProps) => {
   return (
     <button
-      className="hover:text-gray-300 font-sans"
+      style={{ textShadow: "2px 2px 4px rgba(0,0,0,0.7)" }}
+      className="hover:text-gray-300 font-playfair tracking-widest font-bold p-2"
       onClick={() => {
         document.getElementById(idName)?.scrollIntoView({ behavior: "smooth" });
       }}

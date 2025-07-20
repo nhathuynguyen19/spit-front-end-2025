@@ -13,7 +13,8 @@ module.exports = {
       fontFamily: {
         geist: ['"Geist"', 'sans-serif'],
         sans: ["var(--font-merriweather)", "sans-serif"],
-        playfair: ['"Playfair Display"', 'serif']
+        playfair: ['"Playfair Display"', 'serif'],
+        greatvibes: ['"Great Vibes"', 'cursive'],
       },
       backgroundColor : {
         'gach-nen-ngo-mon': '#86846F'
