@@ -51,8 +51,8 @@ const Header = () => {
       <NavBar />
       <img
         ref={mountainRef}
-        className="absolute top-0 w-full"
-        src="/images/sky1.jpg"
+        className="absolute [top:-30px] w-full"
+        src="/images/sky1-crop.jpg"
         alt="sky"
       />
 
@@ -65,8 +65,9 @@ const Header = () => {
       >
         <NgoMonModel />
       </motion.div>
+      {/* tuong truoc ngo mon  */}
       <img
-        className="absolute bottom-0 w-full z-20 h-[100vh] object-cover mx-auto min-h-[360px]"
+        className="absolute [bottom:-100px] w-full z-20 h-[100vh] object-cover mx-auto min-h-[360px]"
         ref={riverRef}
         src="/images/tuong-truoc-ngo-mon.png"
         alt="truoc ngo mon"
@@ -85,8 +86,6 @@ const Header = () => {
         </h1>
         <AnimatedText />
       </motion.div>
-
-      <div className="absolute z-20 bottom-0 left-0 w-full h-8 bg-gradient-to-b from-transparent to-[#F8B55F] pointer-events-none"></div>
     </section>
   );
 };

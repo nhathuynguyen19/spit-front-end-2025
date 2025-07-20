@@ -1,27 +1,30 @@
-import React from "react";
-import Hue from "../components/Hue";
+import React, { useState } from "react";
+import Hue from "../components/HueZigzag";
+// import NgoMonModel from "../components/NgoMon";
+import ContentLangNghe from "../components/ContentLangNghe";
+import ImagesLangNghe from "../components/ImagesLangNghe";
+import HueZigzag from "../components/HueZigzag";
 
 const LangNghe = () => {
-  return (
-    <section id="lang-nghe" className="h-[100vh] bg-[#F8B55F]">
-      <div className="h-[50px]"></div>
-      <div className="h-[calc(100%-50px)] border flex">
-        {/* trai */}
-        <div className="w-[30%] min-w-[220px] h-full border">
-          <div className="w-full max-[899px]:h-full h-[100px] border mx-auto my-auto border-e-red-950">
-            <Hue />
-          </div>
-          <div className="w-full max-[899px]:hidden h-[calc(100%-100px)]"></div>
-        </div>
-        {/* phai */}
-        <div className="w-[70%] h-full border">
-          {/* tieu de tren phai */}
-          <div></div>
+  const [index, setIndex] = useState(0);
+  const max = 1;
 
-          {/* noi dung duoi phai */}
-          <div></div>
-        </div>
-      </div>
+  const next = () => setIndex((prev) => (prev === max ? 0 : prev + 1));
+  const prev = () => setIndex((prev) => (prev === 0 ? max : prev - 1));
+
+  return (
+    <section id="lang-nghe" className="h-[100vh] relative">
+      {/* tren  */}
+      <HueZigzag />
+      {/* nen  */}
+      <img
+        src="/images/paper.jpg"
+        alt="paper"
+        className="z-0 absolute h-[calc(100%-50px)] w-full object-cover blur-sm"
+      />
+
+      {/* duoi  */}
+      <div className="h-[calc(100%-50px)] flex"></div>
     </section>
   );
 };
