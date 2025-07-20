@@ -1,17 +1,19 @@
-import React, { useState } from "react";
+"use client";
+
+// import React, { useState } from "react";
 // import NgoMonModel from "../components/NgoMon";
 import HueZigzag from "../components/HueZigzag";
-import NgoMonModel from "../components/NgoMon";
+// import NgoMonModel from "../components/NgoMon";
 
 const LangNghe = () => {
-  const [index, setIndex] = useState(0);
-  const max = 1;
+  //   const [index, setIndex] = useState(0);
+  //   const max = 1;
 
-  const next = () => setIndex((prev) => (prev === max ? 0 : prev + 1));
-  const prev = () => setIndex((prev) => (prev === 0 ? max : prev - 1));
+  //   const next = () => setIndex((prev) => (prev === max ? 0 : prev + 1));
+  //   const prev = () => setIndex((prev) => (prev === 0 ? max : prev - 1));
 
-  const CARDS = 10;
-  const content = "Lorem ipsum dolor sit amet, consectetur adipiscing elit...";
+  //   const CARDS = 10;
+  //   const content = "Lorem ipsum dolor sit amet, consectetur adipiscing elit...";
 
   return (
     <section id="lang-nghe" className="h-[100vh] relative">

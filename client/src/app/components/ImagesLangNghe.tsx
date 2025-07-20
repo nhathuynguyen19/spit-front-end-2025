@@ -1,6 +1,6 @@
 "use client";
 
-import { div } from "framer-motion/client";
+// import { div } from "framer-motion/client";
 
 interface ContentLangNgheProps {
   index: number;
