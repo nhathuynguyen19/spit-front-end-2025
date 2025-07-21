@@ -18,7 +18,7 @@ export default function BackgroundParallax() {
   }, []);
 
   return (
-    <div className="absolute [top:-30px] w-[150%] left-1/2 -translate-x-1/2 z-0 h-[100vh] overflow-hidden mx-auto min-w-[11rem] transition-transform duration-200 ease-out">
+    <div className="absolute [top:-30px] w-[150%] min-h-[390px] min-w-[1080px] left-1/2 -translate-x-1/2 z-0 h-[100vh] overflow-hidden mx-auto transition-transform duration-200 ease-out">
       <img
         ref={mountainRef}
         className=""

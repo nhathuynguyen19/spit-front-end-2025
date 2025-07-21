@@ -53,7 +53,7 @@ const Header = () => {
   return (
     <section
       id="trang-chu"
-      className="relative w-full h-[100vh] flex justify-center items-center overflow-hidden items-end min-h-[390px]"
+      className="relative min-w-[1080px] w-full h-[100vh] flex justify-center items-center overflow-hidden items-end min-h-[390px]"
     >
       <NavBar />
       <BackgroundParallax />

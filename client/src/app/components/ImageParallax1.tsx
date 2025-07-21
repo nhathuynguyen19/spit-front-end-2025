@@ -18,7 +18,7 @@ export default function ImageParallax() {
   }, []);
 
   return (
-    <div className="absolute [bottom:-40px] w-[110%] left-1/2 -translate-x-1/2 z-20 h-[100vh] overflow-hidden mx-auto min-w-[11rem] transition-transform duration-200 ease-out">
+    <div className="absolute min-h-[390px] [bottom:-40px] w-[110%] left-1/2 -translate-x-1/2 z-20 h-[100vh] overflow-hidden mx-auto min-w-[11rem] transition-transform duration-200 ease-out">
       <img
         ref={refFrontGate}
         src="/images/tuong-truoc-ngo-mon-short.png"

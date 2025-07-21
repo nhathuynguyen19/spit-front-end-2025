@@ -35,7 +35,7 @@ export default function NgoMonModel() {
   }, []);
 
   return (
-    <div className="relative w-full h-screen overflow-hidden">
+    <div className="min-h-[390px] w-full h-screen overflow-hidden">
       <Canvas
         shadows
         // dpr={[1, 1]}
