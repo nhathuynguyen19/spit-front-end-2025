@@ -33,6 +33,10 @@ module.exports = {
         scrollLeft: "scrollLeft 40s linear infinite",
         scrollRight: "scrollRight 40s linear infinite",
       },
+      colors: {
+        background: 'var(--background)',
+        foreground: 'var(--foreground)',
+      },
     },
   },
   plugins: [
