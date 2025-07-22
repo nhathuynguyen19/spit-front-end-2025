@@ -1,5 +1,6 @@
 "use client";
 
+// import Image from "next/image";
 // import React, { useState } from "react";
 // import NgoMonModel from "../components/NgoMon";
 import HueZigzag from "../components/HueZigzag";
@@ -129,7 +130,7 @@ const LangNghe = () => {
                 </div>
               </div>
               <div className=" w-[100%] h-[40%] flex justify-center items-center">
-                <article className="relative hover:scale-105 transition-transform duration-300 ease-in-out shadow-2xl hover:shadow-[0_0_20px_rgba(255,255,255,0.6)] relative  w-[80%] h-[90%] rounded-lg overflow-hidden flex items-center justify-center">
+                <article className="relative hover:scale-105 transition-transform duration-300 ease-in-out shadow-2xl hover:shadow-[0_0_20px_rgba(255,255,255,0.6)] w-[80%] h-[90%] rounded-lg overflow-hidden flex items-center justify-center">
                   <img
                     src="/images/thuyen-hoa-giay.jpg"
                     alt="thuyen-hoa-giay"

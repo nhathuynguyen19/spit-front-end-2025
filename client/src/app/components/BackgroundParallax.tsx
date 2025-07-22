@@ -7,7 +7,7 @@ export default function BackgroundParallax() {
     const handleMouseMove = (e: MouseEvent) => {
       const percentX = -e.clientX / window.innerWidth;
       const maxTranslate = 20; // px tối đa dịch trái/phải
-      const offset = (percentX - 0.5) * 2 * maxTranslate; // -10 đến +10
+      const offset = (percentX - 0.5) * 2 * maxTranslate + 40; // -10 đến +10
       if (mountainRef.current) {
         mountainRef.current.style.transform = `translateX(${offset}px)`;
       }
@@ -18,10 +18,10 @@ export default function BackgroundParallax() {
   }, []);
 
   return (
-    <div className="absolute [top:-30px] w-[150%] min-h-[390px] min-w-[1080px] left-1/2 -translate-x-1/2 z-0 h-[100vh] overflow-hidden mx-auto transition-transform duration-200 ease-out">
+    <div className="absolute z-0 h-full w-[100%] scale-[140%] sm:scale-[130%] flex items-center justify-center overflow-hidden">
       <img
         ref={mountainRef}
-        className=""
+        className="h-full md:w-full object-cover"
         src="/images/sky1-crop.jpg"
         alt="sky"
       />

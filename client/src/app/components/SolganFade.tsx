@@ -47,8 +47,8 @@ export default function AnimatedText() {
 
   return (
     <div
-      style={{ textShadow: "2px 2px 4px rgba(0,0,0,0.7)" }}
-      className="absolute left-1/2 z-40 select-none -translate-x-1/2 top-1/2 -translate-y-1/2 h-12 text-3xl overflow-hidden z-10 en flex items-center justify-center font-greatvibes font-bold text-[#F8B55F]"
+      style={{ textShadow: "2px 2px 4px rgba(0,0,0,1)" }}
+      className="h-[1vh] w-[100%] flex items-center justify-center font-greatvibes font-bold text-[#F8B55F]"
     >
       <AnimatePresence mode="wait">
         {show && (
@@ -59,6 +59,7 @@ export default function AnimatedText() {
             animate="enter"
             exit="exit"
             style={{ whiteSpace: "nowrap" }}
+            className="h-fit w-full flex items-center justify-center text-xs sm:text-lg md:text-lg lg:text-2xl xl:text-3xl mt-[-0.5%] md:mt-[-0.5%] lg:mt-[0.5%] xl:mt-[1.5%]"
           >
             {messages[index]}
           </motion.div>

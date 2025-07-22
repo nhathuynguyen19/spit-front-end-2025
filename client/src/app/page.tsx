@@ -7,7 +7,7 @@ import LangNghe from "./lang-nghe/page";
 
 export default function Home() {
   return (
-    <main className="sw-full w-full h-[200vh] justify-center overflow-hiden box-border">
+    <main className="w-full overflow-hidden">
       <Header />
       <LangNghe />
       {/* <NgoMonModel /> */}
