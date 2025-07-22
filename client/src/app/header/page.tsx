@@ -70,7 +70,7 @@ const Header = () => {
             className="font-playfair font-bold text-white text-sm sm:text-3xl md:text-3xl lg:text-4xl xl:text-5xl xl:mt-[-2%]"
           >
             FESTIVAL HUE 2025
-          </h1>
+          </h1> 
 
           <div className="opacity-0">
             <AnimatedText />
