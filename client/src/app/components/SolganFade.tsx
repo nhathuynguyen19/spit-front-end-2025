@@ -59,7 +59,7 @@ export default function AnimatedText() {
             animate="enter"
             exit="exit"
             style={{ whiteSpace: "nowrap" }}
-            className="h-fit w-full flex items-center justify-center text-xs sm:text-lg md:text-lg lg:text-2xl xl:text-3xl mt-[-0.5%] md:mt-[-0.5%] lg:mt-[0.5%] xl:mt-[1.5%]"
+            className="h-fit w-full flex items-center justify-center text-xl sm:text-lg md:text-lg lg:text-2xl xl:text-3xl mt-[-0.5%] md:mt-[-0.5%] lg:mt-[0.5%] xl:mt-[1.5%]"
           >
             {messages[index]}
           </motion.div>
