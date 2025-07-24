@@ -1,20 +1,12 @@
 "use client";
 
 import React, { useEffect, useRef } from "react";
-// import NavBar from "../components/NavBar";
 import { motion } from "framer-motion";
 import AnimatedText from "../components/SolganFade";
 import NavBar from "../components/NavBar";
 import NgoMonModel from "../components/NgoMonModel";
 import ImageParallax from "../components/ImageParallax1";
 import BackgroundParallax from "../components/BackgroundParallax";
-// import dynamic from "next/dynamic";
-
-// const NgoMonModel = dynamic(() => import("@/app/components/NgoMon"), {
-//   ssr: false,
-//   loading: () => <p>Loading 3D...</p>,
-// });
-
 const Header = () => {
   const mountainRef = useRef<HTMLImageElement>(null);
   const gateRef = useRef<HTMLImageElement>(null);

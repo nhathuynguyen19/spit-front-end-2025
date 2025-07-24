@@ -5,7 +5,7 @@ const CameraLookAt = () => {
   const { camera } = useThree();
 
   useEffect(() => {
-    camera.lookAt(0.02, 1, 0); // 👉 Nhìn lên một chút
+    camera.lookAt(0.02, 1, 0);
   }, [camera]);
 
   return null;
