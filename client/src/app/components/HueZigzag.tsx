@@ -1,5 +1,3 @@
-"use client";
-
 const images = ["/images/H.png", "/images/U.png", "/images/E.png"];
 
 export default function HueZigzag() {

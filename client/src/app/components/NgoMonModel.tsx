@@ -1,5 +1,3 @@
-"use client";
-
 import { Canvas } from "@react-three/fiber";
 import { Suspense, useEffect, useState } from "react";
 import NgoMon from "./NgoMon";
@@ -38,11 +36,9 @@ export default function NgoMonModel() {
     <div className="min-h-[390px] w-full h-screen overflow-hidden">
       <Canvas
         shadows
-        // dpr={[1, 1]}
         camera={{ position: [0.05, 0.4, 3.2], fov: 45 }}
         className="w-full h-full"
       >
-        {/* <ambientLight intensity={0.1} /> */}
         <directionalLight
           position={[5, 10, 5]}
           intensity={1.5}

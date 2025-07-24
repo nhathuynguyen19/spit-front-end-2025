@@ -1,20 +1,12 @@
 "use client";
 
 import React, { useEffect, useRef } from "react";
-// import NavBar from "../components/NavBar";
 import { motion } from "framer-motion";
 import AnimatedText from "../components/SolganFade";
 import NavBar from "../components/NavBar";
 import NgoMonModel from "../components/NgoMonModel";
 import ImageParallax from "../components/ImageParallax1";
 import BackgroundParallax from "../components/BackgroundParallax";
-// import dynamic from "next/dynamic";
-
-// const NgoMonModel = dynamic(() => import("@/app/components/NgoMon"), {
-//   ssr: false,
-//   loading: () => <p>Loading 3D...</p>,
-// });
-
 const Header = () => {
   const mountainRef = useRef<HTMLImageElement>(null);
   const gateRef = useRef<HTMLImageElement>(null);
@@ -67,10 +59,10 @@ const Header = () => {
         <div className="text-center">
           <h1
             style={{ textShadow: "2px 2px 4px rgba(0,0,0,0.7)" }}
-            className="font-playfair font-bold text-white text-sm sm:text-3xl md:text-3xl lg:text-4xl xl:text-5xl xl:mt-[-2%]"
+            className="font-playfair font-bold text-white text-2xl sm:text-3xl md:text-3xl lg:text-4xl xl:text-5xl xl:mt-[-2%]"
           >
             FESTIVAL HUE 2025
-          </h1> 
+          </h1>
 
           <div className="opacity-0">
             <AnimatedText />
@@ -83,7 +75,7 @@ const Header = () => {
         initial={{ opacity: 0, y: 300 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 1.4, ease: "easeOut" }}
-        className=" z-20 absolute w-full h-[20vh] sm:h-[30vh] md:h-[30vh] lg:h-[30vh] xl:h-[30vh] bottom-[98%] sm:bottom-[76%] md:bottom-[67%] lg:bottom-[72%] xl:bottom-[73%]"
+        className=" z-20 absolute w-full h-[20vh] min-w-[342px] sm:h-[30vh] md:h-[30vh] lg:h-[30vh] xl:h-[30vh] bottom-[98%] sm:bottom-[76%] md:bottom-[67%] lg:bottom-[72%] xl:bottom-[73%]"
       >
         <NgoMonModel />
       </motion.div>
@@ -98,7 +90,7 @@ const Header = () => {
         <div className="text-center">
           <h1
             style={{ textShadow: "2px 2px 4px rgba(0,0,0,0.7)" }}
-            className="opacity-0 font-playfair font-bold text-white text-sm sm:text-3xl md:text-3xl lg:text-4xl xl:text-5xl xl:mt-[-2%]"
+            className="opacity-0 font-playfair font-bold text-white text-2xl sm:text-3xl md:text-3xl lg:text-4xl xl:text-5xl xl:mt-[-2%]"
           >
             FESTIVAL HUE 2025
           </h1>

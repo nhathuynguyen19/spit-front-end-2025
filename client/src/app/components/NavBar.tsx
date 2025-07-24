@@ -3,7 +3,6 @@
 import { useState } from "react";
 import Button from "@/app/components/Button";
 import { Menu } from "lucide-react";
-// import BackgroundParallax from "./BackgroundParallax";
 
 const NavBar = () => {
   const [isOpen, setIsOpen] = useState(false);
