@@ -24,8 +24,8 @@ const Button = ({ children, idName = "", onClick, isOpen }: ButtonProps) => {
       style={{
         textShadow: isOpen || isSm ? "2px 2px 4px rgba(0,0,0,0.7)" : "none",
       }}
-      className={`hover:text-gray-300 sm:text-foreground transition-shadow font-playfair font-bold tracking-widest p-2 z-100 ${
-        isOpen ? "text-foreground" : "text-transparent"
+      className={`hover:text-[#F8B55F] sm:text-white transition-shadow font-playfair font-bold tracking-widest p-2 z-100 ${
+        isOpen ? "text-white" : "text-transparent"
       } transition-colors duration-300 ease-in-out`}
       onClick={() => {
         if (idName) {

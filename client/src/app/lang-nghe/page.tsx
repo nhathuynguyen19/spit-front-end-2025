@@ -19,7 +19,7 @@ const LangNghe = () => {
           <div className="w-full h-[50%] min-h-[342px] md:h-[100%]">
             {/* thirty-child  */}
             <div className="w-full h-[50%] flex items-center justify-center">
-              <article className="relative border-4 w-[90%] md:w-[80%] h-[80%] overflow-hidden transition-transform duration-300 ease-in-out shadow-2xl hover:shadow-[0_0_20px_rgba(255,255,255,0.6)] rounded-lg hover:scale-105">
+              <article className="cursor-pointer relative border-4 w-[90%] md:w-[80%] h-[80%] overflow-hidden transition-transform duration-300 ease-in-out shadow-2xl hover:shadow-[0_0_20px_rgba(255,255,255,0.6)] rounded-lg hover:scale-105">
                 <img
                   src="/images/lang-dan-lat-bao-la.jpg"
                   alt=""
@@ -35,7 +35,7 @@ const LangNghe = () => {
             <div className=" w-full h-[50%] flex">
               {/* fourty-child  */}
               <div className="w-[40%] h-[100%] flex items-center justify-center">
-                <article className="relative border-4 w-[75%] h-[80%] md:h-[50%] hover:scale-105 transition-transform duration-300 ease-in-out shadow-2xl hover:shadow-[0_0_20px_rgba(255,255,255,0.6)] rounded-lg overflow-hidden">
+                <article className="cursor-pointer relative border-4 w-[75%] h-[80%] md:h-[50%] hover:scale-105 transition-transform duration-300 ease-in-out shadow-2xl hover:shadow-[0_0_20px_rgba(255,255,255,0.6)] rounded-lg overflow-hidden">
                   <img
                     src="/images/huong-hue.jpg"
                     alt=""
@@ -49,7 +49,7 @@ const LangNghe = () => {
               </div>
               {/* fourty-child  */}
               <div className="w-[60%] h-[100%] flex items-center justify-center">
-                <article className="relative border-4 w-[83%] h-[80%] hover:scale-105 transition-transform duration-300 ease-in-out shadow-2xl hover:shadow-[0_0_20px_rgba(255,255,255,0.6)] rounded-lg overflow-hidden">
+                <article className="cursor-pointer relative border-4 w-[83%] h-[80%] hover:scale-105 transition-transform duration-300 ease-in-out shadow-2xl hover:shadow-[0_0_20px_rgba(255,255,255,0.6)] rounded-lg overflow-hidden">
                   <img
                     src="/images/kim-hoan-ke-mon.jpg"
                     alt=""
@@ -66,7 +66,7 @@ const LangNghe = () => {
 
           {/* second-child  */}
           <div className="w-full h-[50%] md:h-[100%] lg:hidden flex items-center justify-center">
-            <article className="relative hover:scale-105 w-[90%] h-[90%] border-4 transition-transform duration-300 ease-in-out shadow-2xl hover:shadow-[0_0_20px_rgba(255,255,255,0.6)] rounded-lg overflow-hidden">
+            <article className="cursor-pointer relative hover:scale-105 w-[90%] h-[90%] border-4 transition-transform duration-300 ease-in-out shadow-2xl hover:shadow-[0_0_20px_rgba(255,255,255,0.6)] rounded-lg overflow-hidden">
               <img
                 className="h-full w-full object-cover"
                 src="/images/net-dep-non-la.jpg"
@@ -86,7 +86,7 @@ const LangNghe = () => {
           <div className="w-full h-[calc(100%/3*2)] lg:flex">
             {/* thirty-child  */}
             <div className="hidden w-[30%] h-[100%] lg:block lg:flex items-center justify-center">
-              <article className="relative hover:scale-105 border-4 w-[80%] h-[50%] lg:h-[70%] transition-transform duration-300 ease-in-out shadow-2xl hover:shadow-[0_0_20px_rgba(255,255,255,0.6)] rounded-lg overflow-hidden">
+              <article className="cursor-pointer relative hover:scale-105 border-4 w-[80%] h-[50%] lg:h-[70%] transition-transform duration-300 ease-in-out shadow-2xl hover:shadow-[0_0_20px_rgba(255,255,255,0.6)] rounded-lg overflow-hidden">
                 <img
                   className="h-full w-full object-cover"
                   src="/images/net-dep-non-la.jpg"
@@ -102,7 +102,7 @@ const LangNghe = () => {
             <div className="w-full h-[100%] lg:w-[70%]">
               {/* fourty-child  */}
               <div className="w-[100%] h-[50%] flex items-center justify-center">
-                <article className="relative hover:scale-105 border-4 w-[90%] h-[80%] transition-transform duration-300 ease-in-out shadow-2xl hover:shadow-[0_0_20px_rgba(255,255,255,0.6)] rounded-lg overflow-hidden">
+                <article className="cursor-pointer relative hover:scale-105 border-4 w-[90%] h-[80%] transition-transform duration-300 ease-in-out shadow-2xl hover:shadow-[0_0_20px_rgba(255,255,255,0.6)] rounded-lg overflow-hidden">
                   <img
                     className="w-full h-full object-cover"
                     src="/images/sanh-hue.jpg"
@@ -118,7 +118,7 @@ const LangNghe = () => {
               <div className="w-[100%] h-[50%] flex">
                 {/* fifty-child  */}
                 <div className="w-[40%] h-[100%] flex items-center justify-center">
-                  <article className="relative hover:scale-105 border-4 w-[75%] h-[80%] transition-transform duration-300 ease-in-out shadow-2xl hover:shadow-[0_0_20px_rgba(255,255,255,0.6)] rounded-lg overflow-hidden">
+                  <article className="cursor-pointer relative hover:scale-105 border-4 w-[75%] h-[80%] transition-transform duration-300 ease-in-out shadow-2xl hover:shadow-[0_0_20px_rgba(255,255,255,0.6)] rounded-lg overflow-hidden">
                     <img
                       className="h-full w-full object-cover"
                       src="/images/tranh-lang-sinh.jpg"
@@ -132,7 +132,7 @@ const LangNghe = () => {
                 </div>
                 {/* fifty-child  */}
                 <div className="w-[60%] h-[100%] flex items-center justify-center">
-                  <article className="relative hover:scale-105 w-[83.5%] h-[80%] border-4 transition-transform duration-300 ease-in-out shadow-2xl hover:shadow-[0_0_20px_rgba(255,255,255,0.6)] rounded-lg overflow-hidden">
+                  <article className="cursor-pointer relative hover:scale-105 w-[83.5%] h-[80%] border-4 transition-transform duration-300 ease-in-out shadow-2xl hover:shadow-[0_0_20px_rgba(255,255,255,0.6)] rounded-lg overflow-hidden">
                     <img
                       src="/images/nghe-ren.jpg"
                       alt=""
@@ -150,7 +150,7 @@ const LangNghe = () => {
 
           {/* second-child  */}
           <div className="w-full h-[calc(100%/3)] flex items-center justify-center">
-            <article className="relative hover:scale-105 border-4 w-[90%] lg:w-[94%] h-[80%] transition-transform duration-300 ease-in-out shadow-2xl hover:shadow-[0_0_20px_rgba(255,255,255,0.6)] rounded-lg overflow-hidden">
+            <article className="cursor-pointer relative hover:scale-105 border-4 w-[90%] lg:w-[94%] h-[80%] transition-transform duration-300 ease-in-out shadow-2xl hover:shadow-[0_0_20px_rgba(255,255,255,0.6)] rounded-lg overflow-hidden">
               <img
                 src="/images/thuyen-hoa-giay.jpg"
                 alt="thuyen-hoa-giay"
