@@ -1,6 +1,7 @@
 import Header from "@/app//header/page";
 import LangNghe from "./lang-nghe/page";
 import FestivalInfo from "./festival-info/page";
+import Footer from "./footer/page";
 
 export default function Home() {
   return (
@@ -8,6 +9,7 @@ export default function Home() {
       <Header />
       <LangNghe />
       <FestivalInfo />
+      <Footer />
     </main>
   );
 }
