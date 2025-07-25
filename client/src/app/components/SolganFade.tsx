@@ -48,7 +48,7 @@ export default function AnimatedText() {
   return (
     <div
       style={{ textShadow: "2px 2px 4px rgba(0,0,0,1)" }}
-      className="h-[1vh] w-[100%] flex items-center justify-center font-greatvibes font-bold text-[#F8B55F]"
+      className="h-[1vh] w-[100%] flex items-center justify-center font-greatvibes font-bold text-[#F8B55F] select-none"
     >
       <AnimatePresence mode="wait">
         {show && (

@@ -45,7 +45,7 @@ const Header = () => {
   return (
     <section
       id="trang-chu"
-      className="relative w-full h-screen gap-8 flex justify-center items-center overflow-hidden"
+      className="relative w-full h-screen min-w-[342px] gap-8 flex justify-center items-center overflow-hidden"
     >
       <BackgroundParallax />
 
@@ -54,7 +54,7 @@ const Header = () => {
         initial={{ opacity: 0, y: 30 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.8, ease: "easeOut" }}
-        className="absolute w-full h-[100vh] flex items-center justify-center z-30 md:z-20 top-[-5%]"
+        className="absolute w-full h-[100vh] flex items-center justify-center z-30 md:z-20 top-[-5%] select-none"
       >
         <div className="text-center">
           <h1
@@ -85,7 +85,7 @@ const Header = () => {
         initial={{ opacity: 0, y: 30 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.8, ease: "easeOut" }}
-        className="absolute w-full h-[100vh] flex items-center justify-center z-50 top-[-5%]"
+        className="absolute w-full h-[100vh] flex items-center justify-center z-50 top-[-5%] select-none"
       >
         <div className="text-center">
           <h1
