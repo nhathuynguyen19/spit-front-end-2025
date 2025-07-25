@@ -5,7 +5,7 @@ const LangNghe = () => {
   return (
     <section
       id="lang-nghe"
-      className="bg-[#7C4585] w-full h-[calc(300vh-100px)] min-w-[342px] min-h-[100vh] md:h-[calc(200vh-50px)] lg:h-[calc(100vh-50px)]"
+      className="bg-[#7C4585] w-full h-[calc(100vh-50px)] min-w-[342px] min-h-[100vh]"
     >
       {/* tren  */}
       <HueZigzag />
@@ -15,31 +15,31 @@ const LangNghe = () => {
       {/* container  */}
       <div className="w-full h-[calc(100%-50px)] lg:flex">
         {/* first-child  */}
-        <div className="w-full h-[calc(100%/3*2)] md:flex md:h-[50%] lg:h-[100%] lg:w-[40%]">
+        <div className="w-full h-[calc(100%/6*3)] sm:flex sm:h-[50%] lg:h-[100%] lg:w-[40%]">
           {/* second-child  */}
-          <div className="w-full h-[50%] min-h-[342px] md:h-[100%]">
+          <div className="w-full h h-[calc(100%/3*2)] sm:h-[100%]">
             {/* thirty-child  */}
-            <div className="w-full h-[50%] flex items-center justify-center">
+            <div className="w-full h-[50%] h flex items-center justify-center">
               <CraftCard
                 image="/images/lang-dan-lat-bao-la.jpg"
                 title="Đan Lát Bao La - xã Đan Điền, huyện Quảng Điền"
-                wrapperClass="w-[90%] md:w-[80%] h-[80%]"
+                wrapperClass="w-[90%] sm:w-[80%] h-[80%]"
                 overlayClass="h-[30%]"
               />
             </div>
             {/* thirty-child  */}
-            <div className=" w-full h-[50%] flex">
+            <div className=" w-full h-[50%] h flex">
               {/* fourty-child  */}
-              <div className="w-[40%] h-[100%] flex items-center justify-center">
+              <div className="w-[40%] h-[100%] h flex items-center justify-center">
                 <CraftCard
                   image="/images/huong-hue.jpg"
                   title="Làng Hương - Thủy Xuân"
-                  wrapperClass="w-[75%] md:w-[80%] h-[80%]"
-                  overlayClass="h-[30%] md:h-[50%]"
+                  wrapperClass="w-[75%] sm:w-[80%] h-[80%]"
+                  overlayClass="h-[30%] sm:h-[50%]"
                 />
               </div>
               {/* fourty-child  */}
-              <div className="w-[60%] h-[100%] flex items-center justify-center">
+              <div className="w-[60%] h-[100%] h flex items-center justify-center">
                 <CraftCard
                   image="/images/kim-hoan-ke-mon.jpg"
                   title="Kim Hoàn Kế Môn - xã Phong Thạnh, thị xã Phong Điền"
@@ -51,7 +51,7 @@ const LangNghe = () => {
           </div>
 
           {/* second-child  */}
-          <div className="w-full h-[50%] md:h-[100%] lg:hidden flex items-center justify-center">
+          <div className="w-full h h-[calc(100%/3)] sm:h-[100%] lg:hidden flex items-center justify-center">
             <CraftCard
               image="/images/net-dep-non-la.jpg"
               title="Nón Lá Tây Hồ - xã Phú Hồ, huyện Phú Vang TP Huế"
@@ -62,11 +62,11 @@ const LangNghe = () => {
         </div>
 
         {/* first-child  */}
-        <div className="w-full h-[calc(100%/3)] md:h-[50%] lg:w-[60%] lg:h-[100%]">
+        <div className="w-full h h-[calc(100%/6*3)] sm:h-[50%] lg:w-[60%] lg:h-[100%]">
           {/* second-child  */}
-          <div className="w-full h-[calc(100%/3*2)] lg:flex">
+          <div className="w-full h h-[calc(100%/3*2)] lg:flex">
             {/* thirty-child  */}
-            <div className="hidden w-[30%] h-[100%] lg:flex items-center justify-center">
+            <div className="hidden w-[30%] h h-[100%] lg:flex items-center justify-center">
               <CraftCard
                 image="/images/net-dep-non-la.jpg"
                 title="Nón Lá Tây Hồ - xã Phú Hồ, huyện Phú Vang TP Huế"
@@ -75,9 +75,9 @@ const LangNghe = () => {
               />
             </div>
             {/* thirty-child  */}
-            <div className="w-full h-[100%] lg:w-[70%]">
+            <div className="w-full h-[100%] h lg:w-[70%]">
               {/* fourty-child  */}
-              <div className="w-[100%] h-[50%] flex items-center justify-center">
+              <div className="w-[100%] h-[50%] h flex items-center justify-center">
                 <CraftCard
                   image="/images/sanh-hue.jpg"
                   title="Nghề Khảm Sành Sứ"
@@ -86,9 +86,9 @@ const LangNghe = () => {
                 />
               </div>
               {/* fourty-child  */}
-              <div className="w-[100%] h-[50%] flex">
+              <div className="w-[100%] h h-[50%] flex">
                 {/* fifty-child  */}
-                <div className="w-[40%] h-[100%] flex items-center justify-center">
+                <div className="w-[40%] h-[100%] h flex items-center justify-center">
                   <CraftCard
                     image="/images/tranh-lang-sinh.jpg"
                     title="Nghề Tranh Làng Sình - dọc theo hạ lưu sông Hương"
@@ -97,7 +97,7 @@ const LangNghe = () => {
                   />
                 </div>
                 {/* fifty-child  */}
-                <div className="w-[60%] h-[100%] flex items-center justify-center">
+                <div className="w-[60%] h-[100%] h flex items-center justify-center">
                   <CraftCard
                     image="/images/nghe-ren.jpg"
                     title="Làng Rèn Hiền Lương (Hoa Lang)"
@@ -110,7 +110,7 @@ const LangNghe = () => {
           </div>
 
           {/* second-child  */}
-          <div className="w-full h-[calc(100%/3)] flex items-center justify-center">
+          <div className="w-full h-[calc(100%/3)] h flex items-center justify-center">
             <CraftCard
               image="/images/thuyen-hoa-giay.jpg"
               title="Làng Hoa Giấy Thanh Tiên - dọc theo hạ lưu sông Hương"
