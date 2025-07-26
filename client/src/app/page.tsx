@@ -5,7 +5,7 @@ import Footer from "./footer/page";
 
 export default function Home() {
   return (
-    <main className="w-full overflow-hidden">
+    <main className="w-full overflow-hidden h-full">
       <Header />
       <LangNghe />
       <FestivalInfo />

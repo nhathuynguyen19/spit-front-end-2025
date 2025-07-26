@@ -5,7 +5,7 @@ function FestivalInfo() {
   return (
     <section
       id="festival-info"
-      className="bg-[#F8B55F] w-full h-[40vh] min-w-[342px]"
+      className="bg-[#F8B55F] w-full h-[190px] min-w-[342px] min-h-[190px] p-5"
     >
       <ProgressTimeline />
     </section>

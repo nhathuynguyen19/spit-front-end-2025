@@ -22,7 +22,6 @@ export default function ProgressTimeline() {
   }, []);
 
   const [dragging, setDragging] = useState(false);
-  const [dragPercent, setDragPercent] = useState<number | null>(null);
 
   const progressPercent = currentDate.isBefore(yearStart)
     ? 0
@@ -30,6 +29,7 @@ export default function ProgressTimeline() {
     ? 100
     : (currentDate.diff(yearStart, "day") / yearEnd.diff(yearStart, "day")) *
       100;
+  const [dragPercent, setDragPercent] = useState<number>(() => progressPercent);
 
   const markers = useMemo(() => {
     return events.map((event) => {
@@ -91,7 +91,6 @@ export default function ProgressTimeline() {
     const handleMouseUp = () => {
       if (dragging) {
         setDragging(false);
-        setDragPercent(null);
       }
     };
 
@@ -114,7 +113,6 @@ export default function ProgressTimeline() {
     const handleTouchEnd = () => {
       if (dragging) {
         setDragging(false);
-        setDragPercent(null);
       }
     };
 
@@ -130,7 +128,7 @@ export default function ProgressTimeline() {
   }, [dragging, handleMove]);
 
   return (
-    <div className="p-5 h-full">
+    <div className="h-full">
       {selectedEvent && (
         <div className="text-center w-full h-[80%]">
           <p className="text-lg font-playfair italic text-foreground">
@@ -153,7 +151,7 @@ export default function ProgressTimeline() {
 
       <div
         ref={barRef}
-        className="relative w-full h-4 mt-4 bg-gray-300 rounded-full shadow-lg cursor-grab"
+        className="relative w-full h-4 mt-0 bg-gray-300 rounded-full shadow-lg cursor-grab"
         onMouseDown={(e) => {
           setDragging(true);
           handleMove(e.clientX);
@@ -202,10 +200,9 @@ export default function ProgressTimeline() {
             }}
           >
             <div className="relative flex flex-col items-center">
-              {/* Vòng tròn */}
-              <div className="absolute w-4 h-4 bg-[#7C4585] rounded-full mt-[-13px]" />
               {/* Tam giác bên dưới */}
-              <div className="absolute w-0 h-0 border-l-[6px] border-r-[6px] border-t-[6px] border-l-transparent border-r-transparent border-t-[#7C4585]" />
+              <div className="absolute w-0 h-0 border-l-[6.5px] border-r-[6.5px] border-t-[6px] border-l-transparent border-r-transparent border-t-[#7C4585]" />
+              <div className="absolute top-[23px] rotate-180 w-0 h-0 border-l-[6.5px] border-r-[6.5px] border-t-[6px] border-l-transparent border-r-transparent border-t-[#7C4585]" />
             </div>
           </div>
         )}

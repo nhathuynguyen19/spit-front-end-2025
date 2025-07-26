@@ -39,6 +39,7 @@ export default function NgoMonModel() {
         camera={{ position: [0.05, 0.4, 3.2], fov: 45 }}
         className="w-full h-full"
       >
+        <ambientLight intensity={0.1} color={0xffffff} />
         <directionalLight
           position={[5, 10, 5]}
           intensity={1.5}

@@ -7,6 +7,6 @@ export default function NgoMon({
   rotationX?: number;
   rotationY?: number;
 }) {
-  const { scene } = useGLTF("/models/ngo-mon.glb");
+  const { scene } = useGLTF("/blend/ngo-mon.glb");
   return <primitive object={scene} rotation={[rotationX, rotationY, 0]} />;
 }

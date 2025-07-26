@@ -2,7 +2,7 @@
 
 import { useState } from "react";
 import Button from "@/app/components/Button";
-import { Menu } from "lucide-react";
+import { Menu, X } from "lucide-react";
 
 const NavBar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -16,10 +16,10 @@ const NavBar = () => {
     >
       {/* Mobile menu toggle */}
       <button
-        className="absolute left-4 sm:hidden bg-transparent text-white hover:text-[#F8B55F]"
+        className="absolute left-4 sm:hidden hover:bg-[#3D365C] hover:scale-110 transition-transform rounded-sm p-1 text-white hover:text-[#F8B55F] transition-colors duration-200 ease-in-out"
         onClick={() => setIsOpen(!isOpen)}
       >
-        <Menu className="w-6 h-6" />
+        {isOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
       </button>
 
       {/* Menu items - Centered on desktop */}
