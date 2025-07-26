@@ -45,7 +45,7 @@ const Header = () => {
   return (
     <section
       id="trang-chu"
-      className="relative w-full h-screen min-w-[342px] gap-8 flex justify-center items-center overflow-hidden"
+      className="relative w-full h-screen min-w-[342px] min-h-[370px] gap-8 flex justify-center items-center overflow-hidden"
     >
       <BackgroundParallax />
 
@@ -100,7 +100,7 @@ const Header = () => {
           </div>
         </div>
       </motion.div>
-      <div className="absolute h-full w-full top-0 left-0 bg-black bg-opacity-50 z-10"></div>
+      <div className="absolute h-full w-full top-0 left-0 bg-black bg-opacity-20 z-10"></div>
       {/* tuong truoc ngo mon  */}
       <ImageParallax />
 
