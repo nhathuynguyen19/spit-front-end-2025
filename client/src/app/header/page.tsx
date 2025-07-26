@@ -1,22 +1,17 @@
 "use client";
 
 import React, { useEffect, useRef } from "react";
-import NgoMonModel from "../components/NgoMon";
-// import NavBar from "../components/NavBar";
 import { motion } from "framer-motion";
 import AnimatedText from "../components/SolganFade";
-// import dynamic from "next/dynamic";
-
-// const NgoMonModel = dynamic(() => import("@/app/components/NgoMon"), {
-//   ssr: false,
-//   loading: () => <p>Loading 3D...</p>,
-// });
-
+import NavBar from "../components/NavBar";
+import NgoMonModel from "../components/NgoMonModel";
+import ImageParallax from "../components/ImageParallax1";
+import BackgroundParallax from "../components/BackgroundParallax";
 const Header = () => {
   const mountainRef = useRef<HTMLImageElement>(null);
   const gateRef = useRef<HTMLImageElement>(null);
-  const riverRef = useRef<HTMLImageElement>(null);
-  const headingRef = useRef<HTMLHeadingElement>(null);
+  const backHeadingRef = useRef<HTMLHeadingElement>(null);
+  const frontHeadingRef = useRef<HTMLHeadingElement>(null);
 
   useEffect(() => {
     function handleScroll() {
@@ -29,12 +24,17 @@ const Header = () => {
       if (gateRef.current) {
         gateRef.current.style.transform = `translateY(${scrollY * 0.2}px)`;
       }
-      if (riverRef.current) {
-        riverRef.current.style.transform = `translateY(${scrollY * 0}px)`;
+      if (backHeadingRef.current) {
+        backHeadingRef.current.style.transform = `translateY(${
+          scrollY * 0.51
+        }px)`;
+        backHeadingRef.current.style.opacity = `${1 - scrollY / 500}`; // Giảm độ mờ khi cuộn xuống
       }
-      if (headingRef.current) {
-        headingRef.current.style.transform = `translateY(${scrollY * 1}px)`;
-        headingRef.current.style.opacity = `${1 - scrollY / 500}`; // Giảm độ mờ khi cuộn xuống
+      if (frontHeadingRef.current) {
+        frontHeadingRef.current.style.transform = `translateY(${
+          scrollY * 0.51
+        }px)`;
+        frontHeadingRef.current.style.opacity = `${1 - scrollY / 500}`; // Giảm độ mờ khi cuộn xuống
       }
     }
 
@@ -43,43 +43,68 @@ const Header = () => {
   }, []);
 
   return (
-    <section className="relative w-full h-screen flex justify-center items-center items-end overflow-hidden min-h-[390px]">
-      <img
-        ref={mountainRef}
-        className="absolute top-0 w-full"
-        src="/images/sky1-crop.jpg"
-        alt="sky"
-      />
+    <section
+      id="trang-chu"
+      className="relative w-full h-screen min-w-[342px] gap-8 flex justify-center items-center overflow-hidden"
+    >
+      <BackgroundParallax />
+
+      <motion.div
+        ref={backHeadingRef}
+        initial={{ opacity: 0, y: 30 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.8, ease: "easeOut" }}
+        className="absolute w-full h-[100vh] flex items-center justify-center z-30 md:z-20 top-[-5%] select-none"
+      >
+        <div className="text-center">
+          <h1
+            style={{ textShadow: "2px 2px 4px rgba(0,0,0,0.7)" }}
+            className="font-playfair font-bold text-white text-2xl sm:text-3xl md:text-3xl lg:text-4xl xl:text-5xl xl:mt-[-2%]"
+          >
+            FESTIVAL HUE 2025
+          </h1>
+
+          <div className="opacity-0">
+            <AnimatedText />
+          </div>
+        </div>
+      </motion.div>
 
       <motion.div
         ref={gateRef}
         initial={{ opacity: 0, y: 300 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 1.4, ease: "easeOut" }}
-        className="absolute top-0 z-5 bottom-0 h-screen w-full min-h-[425px] mx-auto"
+        className=" z-20 absolute w-full h-[20vh] min-w-[342px] sm:h-[30vh] md:h-[30vh] lg:h-[30vh] xl:h-[30vh] bottom-[98%] sm:bottom-[76%] md:bottom-[67%] lg:bottom-[72%] xl:bottom-[73%]"
       >
         <NgoMonModel />
       </motion.div>
-      <img
-        className="absolute top-0 w-screen z-20 h-[100vh] object-cover mx-auto min-h-[360px]"
-        ref={riverRef}
-        src="/images/tuong-truoc-ngo-mon.png"
-        alt="truoc ngo mon"
-        draggable={false}
-      />
-      <div className="absolute inset-0 bg-black bg-opacity-50 z-10"></div>
+
       <motion.div
-        ref={headingRef}
+        ref={frontHeadingRef}
         initial={{ opacity: 0, y: 30 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.8, ease: "easeOut" }}
-        className="absolute z-10 w-screen text-center"
+        className="absolute w-full h-[100vh] flex items-center justify-center z-50 top-[-5%] select-none"
       >
-        <h1 className="text-3xl md:text-5xl sm:text-4xl font-sans font-bold tracking-wider text-white">
-          Festival Hue 2025
-        </h1>
-        <AnimatedText />
+        <div className="text-center">
+          <h1
+            style={{ textShadow: "2px 2px 4px rgba(0,0,0,0.7)" }}
+            className="opacity-0 font-playfair font-bold text-white text-2xl sm:text-3xl md:text-3xl lg:text-4xl xl:text-5xl xl:mt-[-2%]"
+          >
+            FESTIVAL HUE 2025
+          </h1>
+
+          <div className="">
+            <AnimatedText />
+          </div>
+        </div>
       </motion.div>
+      <div className="absolute h-full w-full top-0 left-0 bg-black bg-opacity-50 z-10"></div>
+      {/* tuong truoc ngo mon  */}
+      <ImageParallax />
+
+      <NavBar />
     </section>
   );
 };
