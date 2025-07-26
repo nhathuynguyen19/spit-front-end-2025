@@ -41,7 +41,7 @@ export default function ProgressTimeline() {
         currentDate.isSame(start, "day") || currentDate.isAfter(start);
       return { ...event, percent, passed };
     });
-  }, [events, currentDate]);
+  }, [events, yearStart, yearEnd, currentDate]);
 
   const upcomingEvent = useMemo(() => {
     return markers.find((m) => !m.passed);
