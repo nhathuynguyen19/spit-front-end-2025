@@ -1,0 +1,23 @@
+{
+  "name": "spit-front-end-2025",
+  "version": "1.0.0",
+  "description": "https://spit-front-end-2025-festival-hue.vercel.app/",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nhathuynguyen19/spit-front-end-2025.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/nhathuynguyen19/spit-front-end-2025/issues"
+  },
+  "homepage": "https://github.com/nhathuynguyen19/spit-front-end-2025#readme",
+  "dependencies": {
+    "vite": "^7.0.6"
+  }
+}
