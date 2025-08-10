@@ -8,92 +8,92 @@ function NgheThuat() {
     >
       <div className="w-full h-[calc(100%-50px)] flex justify-center items-center">
         <div className="w-full h-[calc(50%)]">
-            <div
+          <div
+            style={{
+              display: "grid",
+              gridTemplateColumns: "repeat(4, 1fr)",
+              gridGap: "20px 20px",
+              padding: "5px",
+            }}
+          >
+            <img
+              src="/images/nhanhac.jpg"
+              alt="Nhạc"
               style={{
-                display: "grid",
-                gridTemplateColumns: "repeat(4, 1fr)",
-                gridGap:"20px 20px",
-                padding: "5px",
+                width: "100%",
+                height: "400px",
+                objectFit: "cover",
+                borderRadius: "8px",
+                boxShadow: "0 0 5px rgba(0,0,0,0.2)",
               }}
-            >
-              <img
-                src="/images/nhanhac.jpg"
-                alt="Nhạc"
-                style={{
-                  width: "100%",
-                  height: "400px",
-                  objectFit: "cover",
-                  borderRadius: "8px",
-                  boxShadow: "0 0 5px rgba(0,0,0,0.2)",
-                }}
-              />
-              <img
-                src="/images/nghethua.jpg"
-                alt="Nghệ thuật"
-                style={{
-                  width: "100%",
-                  height: "400px",
-                  objectFit: "cover",
-                  borderRadius: "8px",
-                  boxShadow: "0 0 5px rgba(0,0,0,0.2)",
-                }}
-              />
-              <img
-                src="/images/cahue.jpg"
-                alt="Ca Huế"
-                style={{
-                  width: "100%",
-                  height: "400px",
-                  objectFit: "cover",
-                  borderRadius: "8px",
-                  boxShadow: "0 0 5px rgba(0,0,0,0.2)",
-                }}
-              />
-              <img
-                src="/images/bieudien.jpg"
-                alt="Biểu diễn"
-                style={{
-                  width: "100%",
-                  height: "400px",
-                  objectFit: "cover",
-                  borderRadius: "8px",
-                  boxShadow: "0 0 5px rgba(0,0,0,0.2)",
-                }}
-              />
-            </div>
-            <div
+            />
+            <img
+              src="/images/dangian.jpg"
+              alt="Nghệ thuật"
               style={{
-                display: "flex",
-                justifyContent: "center",
-                gap: "20px",
-                margin: "10px",
+                width: "100%",
+                height: "400px",
+                objectFit: "cover",
+                borderRadius: "8px",
+                boxShadow: "0 0 5px rgba(0,0,0,0.2)",
               }}
-            >
-              <img
-                src="/images/aodai.jpg"
-                alt="Ảnh 1"
-                style={{
-                  width: "50%",
-                  height: "400px",
-                  objectFit: "fill",
-                  borderRadius: "8px",
-                  boxShadow: "0 0 5px rgba(0,0,0,0.2)",
-                }}
-              />
-              <img
-                src="/images/trinhdien.jpg"
-                alt="Ảnh 2"
-                style={{
-                  width: "50%",
-                  height: "400px",
-                  objectFit: "fill",
-                  borderRadius: "8px",
-                  boxShadow: "0 0 5px rgba(0,0,0,0.2)",
-                }}
-              />
-            </div>
+            />
+            <img
+              src="/images/nghethuat.jpg"
+              alt="Ca Huế"
+              style={{
+                width: "100%",
+                height: "400px",
+                objectFit: "cover",
+                borderRadius: "8px",
+                boxShadow: "0 0 5px rgba(0,0,0,0.2)",
+              }}
+            />
+            <img
+              src="/images/bieudien.jpeg"
+              alt="Biểu diễn"
+              style={{
+                width: "100%",
+                height: "400px",
+                objectFit: "cover",
+                borderRadius: "8px",
+                boxShadow: "0 0 5px rgba(0,0,0,0.2)",
+              }}
+            />
           </div>
+          <div
+            style={{
+              display: "flex",
+              justifyContent: "center",
+              gap: "20px",
+              margin: "10px",
+            }}
+          >
+            <img
+              src="/images/aodai.png"
+              alt="Ảnh 1"
+              style={{
+                width: "50%",
+                height: "400px",
+                objectFit: "fill",
+                borderRadius: "8px",
+                boxShadow: "0 0 5px rgba(0,0,0,0.2)",
+              }}
+            />
+            <img
+              src="/images/"
+              alt="Ảnh 2"
+              style={{
+                width: "50%",
+                height: "400px",
+                objectFit: "fill",
+                borderRadius: "8px",
+                boxShadow: "0 0 5px rgba(0,0,0,0.2)",
+              }}
+            />
           </div>
+        </div>
+      </div>
     </section>
   );
 }
