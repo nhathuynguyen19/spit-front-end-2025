@@ -84,18 +84,6 @@ const amThucDict = [
 
 export default function AmThuc() {
   const [current, setCurrent] = useState(0);
-  const [highlightIndex, setHighlightIndex] = useState<number | null>(null);
-  const itemRefs = useRef<(HTMLDivElement | null)[]>([]);
-
-  const nextSlide = () => {
-    setCurrent((prev) => (prev + 1) % sliderImages.length);
-  };
-
-  const prevSlide = () => {
-    setCurrent(
-      (prev) => (prev - 1 + sliderImages.length) % sliderImages.length
-    );
-  };
 
   // Autoplay
   useEffect(() => {
