@@ -26,7 +26,7 @@ const NavBar = () => {
       <div className="hidden z-100 sm:flex space-x-4 text-white text-sm sm:text-[12px] lg:text-base tracking-wide">
         <Button idName="trang-chu">Trang Chủ</Button>
         <Button idName="lang-nghe">Làng Nghề</Button>
-        <Button>Ẩm Thực</Button>
+        <Button idName="am-thuc">Ẩm Thực</Button>
         <Button>Nghệ Thuật</Button>
         <Button idName="festival-info">Festival Info</Button>
       </div>
@@ -55,7 +55,11 @@ const NavBar = () => {
           >
             Làng Nghề
           </Button>
-          <Button onClick={() => setIsOpen(false)} isOpen={isOpen}>
+          <Button
+            idName="am-thuc"
+            onClick={() => setIsOpen(false)}
+            isOpen={isOpen}
+          >
             Ẩm Thực
           </Button>
           <Button onClick={() => setIsOpen(false)} isOpen={isOpen}>

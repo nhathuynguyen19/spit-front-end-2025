@@ -31,3 +31,83 @@ body {
   font-family: Arial, Helvetica, sans-serif;
   /* box-sizing: border-box; */
 }
+
+.zigzagticketright {
+  clip-path: polygon(
+    0 0,
+    calc(100% - 6px) 0,
+    100% 5%,
+    calc(100% - 6px) 10%,
+    100% 15%,
+    calc(100% - 6px) 20%,
+    100% 25%,
+    calc(100% - 6px) 30%,
+    100% 35%,
+    calc(100% - 6px) 40%,
+    100% 45%,
+    calc(100% - 6px) 50%,
+    100% 55%,
+    calc(100% - 6px) 60%,
+    100% 65%,
+    calc(100% - 6px) 70%,
+    100% 75%,
+    calc(100% - 6px) 80%,
+    100% 85%,
+    calc(100% - 6px) 90%,
+    100% 95%,
+    calc(100% - 6px) 100%,
+    0 100%
+  );
+}
+
+.zigzagticketleft {
+  clip-path: polygon(
+    6px 0,
+    100% 0,
+    100% 100%,
+    6px 100%,
+    0 95%,
+    6px 90%,
+    0 85%,
+    6px 80%,
+    0 75%,
+    6px 70%,
+    0 65%,
+    6px 60%,
+    0 55%,
+    6px 50%,
+    0 45%,
+    6px 40%,
+    0 35%,
+    6px 30%,
+    0 25%,
+    6px 20%,
+    0 15%,
+    6px 10%,
+    0 5%,
+    6px 0
+  );
+}
+.image-card img {
+  transition: transform 0.6s ease;
+}
+
+.image-card:hover img {
+  transform: scale(120%);
+}
+
+.image-card:hover .overlayImage{
+  opacity: 1;
+}
+
+.overlayImage {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 150%;
+  height: 150%;
+  transform: translateX(-50%) translateY(-50%);
+  backdrop-filter: blur(2px);
+  background: rgba(0, 0, 0, 0.1);
+}
+
