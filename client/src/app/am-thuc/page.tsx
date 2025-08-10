@@ -1,23 +1,6 @@
 "use client";
 
-import React, { useState, useRef, useEffect } from "react";
 import CardMonAn from "../components/CardMonAn";
-import AmThucArrow from "../components/AmThucArrow";
-
-const sliderImages = [
-  "/images/bun-bo-hue-1-1.jpg",
-  "/images/com-bun-hen.jpg",
-  "/images/banh-mi-op-la.jpg",
-  "/images/bep-ngon-xoi-xeo-559042.jpg",
-  "/images/dac-san-hue-4-che-hue.jpg",
-  "/images/dac-san-hue-12-banh-bot-loc.jpg",
-  "/images/dac-san-hue-13-banh-nam.jpg",
-  "/images/dac-san-hue-14-banh-khoai.jpg",
-  "/images/banh-canh-kho-hue-3-960x600.jpg",
-  "/images/ga.jpg",
-  "/images/btn.jpg",
-  "/images/nemlui.jpg",
-];
 
 const amThucDict = [
   {
@@ -83,15 +66,6 @@ const amThucDict = [
 ];
 
 export default function AmThuc() {
-  const [current, setCurrent] = useState(0);
-
-  // Autoplay
-  useEffect(() => {
-    const interval = setInterval(() => {
-      setCurrent((prev) => (prev + 1) % sliderImages.length);
-    }, 3000);
-    return () => clearInterval(interval);
-  }, []);
 
   return (
     <section
