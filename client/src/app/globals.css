@@ -93,7 +93,7 @@ body {
 }
 
 .image-card:hover img {
-  transform: scale(120%);
+  transform: scale(110%);
 }
 
 .image-card:hover .overlayImage{

@@ -131,10 +131,10 @@ export default function ProgressTimeline() {
     <div className="h-full">
       {selectedEvent && (
         <div className="text-center w-full h-[80%]">
-          <p className="text-lg font-playfair italic text-foreground">
+          <p className="text-sm md:text-lg font-playfair italic text-foreground">
             {selectedEvent.title}
           </p>
-          <p className="text-lg text-[#3D365C] font-greatvibes font-bold">
+          <p className="text-sm md:text-md text-[#3D365C] font-greatvibes font-bold">
             {selectedEvent.location}
           </p>
           <p className="text-sm text-[#3D365C] font-playfair italic font-bold">

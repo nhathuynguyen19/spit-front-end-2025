@@ -13,7 +13,7 @@ const LangNghe = () => {
 
       {/* chinh sua responsive  */}
       {/* container  */}
-      <div className="w-full h-[calc(100%-50px)] lg:flex p-4">
+      <div className="w-full h-[calc(100%-50px)] lg:flex pb-3">
         {/* first-child  */}
         <div className="w-full h-[calc(100%/6*3)] sm:flex sm:h-[50%] lg:h-[100%] lg:w-[40%]">
           {/* second-child  */}

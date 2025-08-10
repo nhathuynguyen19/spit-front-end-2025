@@ -32,7 +32,7 @@ const Button = ({ children, idName = "", onClick, isOpen }: ButtonProps) => {
   return (
     <button
       style={{
-        textShadow: isOpen || isSm ? "2px 2px 4px rgba(0,0,0,0.7)" : "none",
+        textShadow: isOpen || isSm ? "1px 1px 6px rgba(0,0,0,1)" : "none",
         touchAction: "manipulation",
       }}
       className={`sm:hover:text-[#F8B55F] hover:scale-110 transition-transform transition-shadow sm:text-white font-playfair font-bold tracking-widest p-2 z-100 ${
