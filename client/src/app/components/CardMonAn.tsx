@@ -8,7 +8,7 @@ type CardMonAnProps = {
 
 function CardMonAn({ src, title, des }: CardMonAnProps) {
   return (
-    <div className="image-card h-full m-4 aspect-[1/1.8] transition-transform duration-300 ease-in-out cursor-pointer md:h-[100%]">
+    <div className="image-card h-full m-4 aspect-[1/1.8] md:aspect-[1/1.5] transition-transform duration-300 ease-in-out cursor-pointer md:h-[100%]">
       <div className="overflow-hidden w-full aspect-square relative rounded-2xl shadow-[2px_2px_4px_1px_rgba(0,0,0,0.3)]">
         <img src={src} alt={title} className="h-full object-cover" />
 
