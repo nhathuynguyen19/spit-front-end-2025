@@ -16,15 +16,19 @@ const NavBar = () => {
     >
       {/* Mobile menu toggle */}
       <button
-        className="absolute left-4 sm:hidden hover:bg-[#3D365C] hover:scale-110 transition-transform rounded-sm p-1 text-white hover:text-[#F8B55F] transition-colors duration-200 ease-in-out"
+        className={`absolute left-4 sm:hidden hover:bg-[#3D365C] hover:scale-110 transition-transform text-black hover:text-[#F8B55F] rounded-md p-1 transition-colors duration-1000 ease-out ${isOpen ? "":""}`}
         onClick={() => setIsOpen(!isOpen)}
       >
-        {isOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
+        {isOpen ? (
+          <X className="w-6 h-6 text-white bg-[#3D365C] hover:text-[#F8B55F] transition-transform transition-colors duration-1000 ease-out" />
+        ) : (
+          <Menu className="w-6 h-6" />
+        )}
       </button>
 
       {/* Menu items - Centered on desktop */}
       <div className="hidden z-100 sm:flex space-x-4 text-white text-sm sm:text-[12px] lg:text-base tracking-wide">
-        <Button idName="trang-chu">Trang Chủ</Button>
+        <Button idName="trang-chu">Ngọ Môn</Button>
         <Button idName="lang-nghe">Làng Nghề</Button>
         <Button idName="am-thuc">Ẩm Thực</Button>
         <Button>Nghệ Thuật</Button>
@@ -46,7 +50,7 @@ const NavBar = () => {
             onClick={() => setIsOpen(false)}
             isOpen={isOpen}
           >
-            Trang Chủ
+            Ngọ Môn
           </Button>
           <Button
             idName="lang-nghe"

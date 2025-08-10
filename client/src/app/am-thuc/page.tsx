@@ -66,7 +66,6 @@ const amThucDict = [
 ];
 
 export default function AmThuc() {
-
   return (
     <section
       id="am-thuc"
@@ -75,11 +74,11 @@ export default function AmThuc() {
       {/* Danh sách món ăn */}
       <div className="w-full h-fit">
         <div className="h-fit">
-          <h2 className="text-black ml-4 font-bold cursor-pointer md:hidden">
-            Sáng &rsaquo;
+          <h2 className="text-black ml-4 font-bold cursor-pointer md:hidden hover:underline w-fit">
+            Ăn sáng &rsaquo;
           </h2>
-          <h2 className="text-black font-bold cursor-pointer md:block text-center hidden">
-            Sáng
+          <h2 className="text-black font-bold cursor-pointer md:block text-center hidden text-lg underline">
+            Ăn sáng
           </h2>
           <div className="w-[200%] aspect-[16/5] flex md:w-[100%] md:h-fit md:justify-center">
             <CardMonAn
@@ -105,11 +104,11 @@ export default function AmThuc() {
           </div>
         </div>
         <div className="h-fit">
-          <h2 className="text-black ml-4 font-bold cursor-pointer md:hidden">
-            Trưa &rsaquo;
+          <h2 className="text-black ml-4 font-bold cursor-pointer md:hidden hover:underline w-fit">
+            Buổi trưa &rsaquo;
           </h2>
-          <h2 className="text-black font-bold cursor-pointer md:block text-center hidden">
-            Trưa
+          <h2 className="text-black font-bold cursor-pointer md:block text-center hidden text-lg underline">
+            Buổi trưa
           </h2>
           <div className="w-[200%] aspect-[16/5] flex md:w-[100%] md:h-fit md:justify-center">
             <CardMonAn
@@ -135,11 +134,11 @@ export default function AmThuc() {
           </div>
         </div>
         <div className="h-fit">
-          <h2 className="text-black ml-4 font-bold cursor-pointer md:hidden">
-            Khuya &rsaquo;
+          <h2 className="text-black ml-4 font-bold cursor-pointer md:hidden hover:underline w-fit">
+            Đêm khuya &rsaquo;
           </h2>
-          <h2 className="text-black font-bold cursor-pointer md:block text-center hidden">
-            Khuya
+          <h2 className="text-black font-bold cursor-pointer md:block text-center hidden text-lg underline">
+            Đêm khuya
           </h2>
           <div className="w-[200%] aspect-[16/5] flex md:w-[100%] md:h-fit md:justify-center">
             <CardMonAn

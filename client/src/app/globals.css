@@ -89,11 +89,14 @@ body {
   );
 }
 .image-card img {
+  display: block;
+  transform: scale(1);
   transition: transform 0.6s ease;
 }
 
 .image-card:hover img {
-  transform: scale(120%);
+  transition: transform 0.6s ease;
+  transform: scale(1.1);
 }
 
 .image-card:hover .overlayImage{
