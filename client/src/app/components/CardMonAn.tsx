@@ -17,7 +17,7 @@ function CardMonAn({ src, title, des }: CardMonAnProps) {
       <p className="text-black text-md font-bold cursor-pointer mt-2 text-center md:text-left hover:underline w-fit mx-auto md:mx-0">
         {title}
       </p>
-      <p className="text-gray-700 text-[10px] lg:text-sm cursor-text text-center md:text-left italic">
+      <p className="text-gray-700 text-[10px] lg:text-sm cursor-text text-center md:text-left">
         {des}
       </p>
     </div>
