@@ -42,9 +42,19 @@ const Button = ({ children, idName = "", onClick, isOpen }: ButtonProps) => {
       } active:text-[#F8B55F] transition-colors duration-100 ease-in-out`}
       onClick={() => {
         if (idName) {
-          document
-            .getElementById(idName)
-            ?.scrollIntoView({ behavior: "smooth" });
+          const el = document.getElementById(idName);
+          if (el) {
+            let offset = 0;
+            if (
+              idName === "am-thuc" ||
+              idName === "nghe-thuat" ||
+              idName === "festival-info"
+            ) {
+              offset = 50; // chỉ trừ 50px cho 2 id này
+            }
+            const y = el.getBoundingClientRect().top + window.scrollY - offset;
+            window.scrollTo({ top: y, behavior: "smooth" });
+          }
         }
         onClick?.();
       }}

@@ -1,8 +1,8 @@
 import React from "react";
 
 interface FooterDivProps {
-  url: string;
-  title: string;
+  url?: string;
+  title?: string;
   titleIsShort?: boolean;
 }
 

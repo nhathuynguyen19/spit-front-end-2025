@@ -25,7 +25,7 @@ function NgheThuat() {
           </div>
 
           <div className="card">
-            <img src="/images/cahue.jpg" alt="Ca Huế" />
+            <img src="/images/cahue.jpeg" alt="Ca Huế" />
             <p>
               Ca Huế – Hình thức ca nhạc truyền thống trên sông Hương, kết hợp
               nhạc cụ dân tộc như đàn tranh, đàn nguyệt, sáo trúc.

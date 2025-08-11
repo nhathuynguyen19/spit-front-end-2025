@@ -5,7 +5,7 @@ const LangNghe = () => {
   return (
     <section
       id="lang-nghe"
-      className="bg-[#7C4585] w-full h-[calc(100vh-50px)] min-w-[342px] min-h-[600px]"
+      className="bg-[#7C4585] w-full h-[calc(100vh)] min-w-[342px] min-h-[600px]"
     >
       {/* tren  */}
       <HueZigzag />

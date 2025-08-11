@@ -16,7 +16,9 @@ const NavBar = () => {
     >
       {/* Mobile menu toggle */}
       <button
-        className={`absolute left-4 sm:hidden hover:bg-[#3D365C] hover:scale-110 transition-transform text-black hover:text-[#F8B55F] rounded-md p-1 transition-colors duration-1000 ease-out ${isOpen ? "":""}`}
+        className={`absolute left-4 sm:hidden hover:bg-[#3D365C] hover:scale-110 transition-transform text-black hover:text-[#F8B55F] rounded-md p-1 transition-colors duration-1000 ease-out ${
+          isOpen ? "" : ""
+        }`}
         onClick={() => setIsOpen(!isOpen)}
       >
         {isOpen ? (
@@ -31,7 +33,7 @@ const NavBar = () => {
         <Button idName="trang-chu">Ngọ Môn</Button>
         <Button idName="lang-nghe">Làng Nghề</Button>
         <Button idName="am-thuc">Ẩm Thực</Button>
-        <Button>Nghệ Thuật</Button>
+        <Button idName="nghe-thuat">Nghệ Thuật</Button>
         <Button idName="festival-info">Festival Info</Button>
       </div>
 
@@ -66,7 +68,11 @@ const NavBar = () => {
           >
             Ẩm Thực
           </Button>
-          <Button onClick={() => setIsOpen(false)} isOpen={isOpen}>
+          <Button
+            idName="nghe-thuat"
+            onClick={() => setIsOpen(false)}
+            isOpen={isOpen}
+          >
             Nghệ Thuật
           </Button>
           <Button

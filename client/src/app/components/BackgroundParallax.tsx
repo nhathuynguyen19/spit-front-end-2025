@@ -18,7 +18,7 @@ export default function BackgroundParallax() {
   }, []);
 
   return (
-    <div className="absolute bg-[#3D365C] z-0 h-full w-[100%] scale-[140%] sm:scale-[130%] flex items-center justify-center overflow-hidden">
+    <div className="absolute bg-white z-0 h-full w-[100%] scale-[140%] sm:scale-[130%] flex items-center justify-center overflow-hidden">
       <img
         ref={mountainRef}
         className="h-full w-full md:w-full object-cover object-[0%,85%]"
