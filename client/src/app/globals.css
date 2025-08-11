@@ -96,7 +96,7 @@ body {
   transform: scale(110%);
 }
 
-.image-card:hover .overlayImage{
+.image-card:hover .overlayImage {
   opacity: 1;
 }
 
@@ -110,4 +110,86 @@ body {
   backdrop-filter: blur(2px);
   background: rgba(0, 0, 0, 0.1);
 }
+.main {
+  max-width: 75rem;
+  padding: 0;
+}
 
+.main__heading {
+  font-weight: 600;
+  font-size: 2.25em;
+  margin-bottom: 0.75em;
+  text-align: center;
+  color: #eceff1;
+}
+
+.cards {
+  position: relative;
+}
+
+.cards__inner {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: stretch;
+}
+
+.card {
+  --flow-space: 0.5em;
+  --hsl: var(--hue), var(--saturation), var(--lightness);
+  flex: 1 1 1;
+  padding: 20px;
+  display: grid;
+  gap: 1.25em;
+  grid-template-rows: auto auto auto;
+  align-items: start;
+  color: #eceff1;
+  background-color: transparent;
+  border: 1px solid #fccbf0;
+  border-radius: 15px;
+  -webkit-border-radius: 15px;
+  -moz-border-radius: 15px;
+  -ms-border-radius: 15px;
+  -o-border-radius: 15px;
+}
+
+.card img {
+  width: 100%;
+  max-height: 400px;
+  height: auto;
+  object-fit: cover;
+  border-radius: 8px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  -ms-border-radius: 8px;
+  -o-border-radius: 8px;
+  transition: transform 1s ease, filter 12s ease;
+  -moz-transition: transform 1s ease, filter 12s ease;
+  -ms-transition: transform 1s ease, filter 12s ease;
+  -o-transition: transform 1s ease, filter 12s ease;
+  overflow: hidden;
+  -webkit-transition: transform 1s ease, filter 12s ease;
+}
+.card img:hover {
+  transform: scale(1.5);
+  -webkit-transform: scale(1.5);
+  -moz-transform: scale(1.5);
+  -ms-transform: scale(1.5);
+  -o-transform: scale(1.5);
+  filter: blur(3px);
+  -webkit-filter: blur(3px);
+}
+.card img:active {
+  transform: scale(1.05);
+  -webkit-transform: scale(1.05);
+  -moz-transform: scale(1.05);
+  -ms-transform: scale(1.05);
+  -o-transform: scale(1.05);
+}
+.card p {
+  font-size: 20px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  color: #333;
+  line-height: 1.5;
+  margin-top: 0.5em;
+}
