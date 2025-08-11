@@ -2,7 +2,7 @@ const images = ["/images/H.png", "/images/U.png", "/images/E.png"];
 
 export default function HueZigzag() {
   const rowCount = 1;
-  const hueRepeat = 40; // đủ dài để animation không bị giật
+  const hueRepeat = 40;
 
   return (
     <div className="relative w-full h-[50px] bg-[#7C4585] overflow-hidden flex items-center">
@@ -17,7 +17,6 @@ export default function HueZigzag() {
               rowIndex % 0 === 0 ? "animate-scrollLeft" : "animate-scrollRight"
             }`}
           >
-            {/* Lặp HUE đủ 2 lần để scroll mượt */}
             {[...Array(2)].map((_, loopIndex) => (
               <div key={loopIndex} className="flex">
                 {Array.from({ length: hueRepeat }).map((_, i) => (

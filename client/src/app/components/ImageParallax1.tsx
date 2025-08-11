@@ -6,8 +6,8 @@ export default function ImageParallax() {
   useEffect(() => {
     const handleMouseMove = (e: MouseEvent) => {
       const percentX = e.clientX / window.innerWidth;
-      const maxTranslate = 10; // px tối đa dịch trái/phải
-      const offset = (percentX - 0.5) * 2 * maxTranslate + 8; // -10 đến +10
+      const maxTranslate = 10;
+      const offset = (percentX - 0.5) * 2 * maxTranslate + 8;
       if (refFrontGate.current) {
         refFrontGate.current.style.transform = `translateX(${offset}px)`;
       }

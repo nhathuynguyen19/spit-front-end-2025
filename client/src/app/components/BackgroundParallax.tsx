@@ -6,8 +6,8 @@ export default function BackgroundParallax() {
   useEffect(() => {
     const handleMouseMove = (e: MouseEvent) => {
       const percentX = -e.clientX / window.innerWidth;
-      const maxTranslate = 20; // px tối đa dịch trái/phải
-      const offset = (percentX - 0.5) * 2 * maxTranslate + 40; // -10 đến +10
+      const maxTranslate = 20;
+      const offset = (percentX - 0.5) * 2 * maxTranslate + 40;
       if (mountainRef.current) {
         mountainRef.current.style.transform = `translateX(${offset}px)`;
       }

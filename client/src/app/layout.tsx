@@ -16,18 +16,18 @@ const geistSans = Geist({
 const merriweather = Merriweather({
   subsets: ["latin"],
   variable: "--font-merriweather",
-  weight: ["400", "700"], // tuỳ nhu cầu
+  weight: ["400", "700"],
 });
 
 const greatVibes = Great_Vibes({
   subsets: ["latin"],
-  weight: "400", // chỉ có 400
+  weight: "400",
   variable: "--font-great-vibes",
 });
 
 const playfair = Playfair_Display({
   subsets: ["latin"],
-  weight: ["400", "700"], // thêm các trọng số nếu cần
+  weight: ["400", "700"],
   variable: "--font-playfair",
 });
 
