@@ -73,13 +73,18 @@ export default function AmThuc() {
     >
       {/* Danh sách món ăn */}
       <div className="w-full h-fit">
-        <div className="h-fit">
+        <div>
           <h2 className="text-black ml-4 font-bold cursor-pointer md:hidden hover:underline w-fit">
             Ăn sáng &rsaquo;
           </h2>
           <h2 className="text-black font-bold cursor-pointer md:block text-center hidden text-lg underline">
             Ăn sáng
           </h2>
+        </div>
+        <div
+          className="h-fit"
+          style={{ WebkitOverflowScrolling: "touch" }}
+        >
           <div className="w-[200%] aspect-[16/5] flex md:w-[100%] md:h-fit md:justify-center">
             <CardMonAn
               src={amThucDict[0]["src"]}

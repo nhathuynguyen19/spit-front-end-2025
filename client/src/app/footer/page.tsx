@@ -16,6 +16,7 @@ function Footer() {
         title="Tam Tòa - 33 Tống Duy Tân, Phường Phú Xuân, thành phố Huế, Hue, Vietnam"
         titleIsShort={false}
       />
+      <p className="flex font-playfair text-[8.5px] [@media(min-width:540px)]:text-[12px] w-fit mx-auto pt-4">© created by 82 ki lô bít trên giây</p>
     </section>
   );
 }

@@ -3,8 +3,11 @@ import DiemNhan from "../components/DiemNhan";
 
 function MoreInfo() {
   return (
-    <section className="bg-white text-black font-playfair pb-4">
-      <div className="block pt-8 pb-8 text-lg md:text-xl">
+    <section
+      id="nghe-thuat"
+      className="bg-white min-w-[342px] text-black font-playfair pb-4"
+    >
+      <div className="block pt-12 pb-12 text-lg md:text-xl">
         <h2 className="font-bold italic text-center">
           Những Điểm Nhấn Không Thể Bỏ Lỡ
         </h2>
