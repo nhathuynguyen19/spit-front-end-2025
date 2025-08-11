@@ -18,7 +18,7 @@ export default function NgoMonModel() {
 
     const handleMouseMove = (e: MouseEvent) => {
       const percentX = e.clientX / window.innerWidth;
-      const angleY = (percentX - 0.9) * (Math.PI / 24) + 0.05; // ±20 độ
+      const angleY = (percentX - 0.9) * (Math.PI / 24) + 0.05;
       setRotationY(angleY);
     };
 

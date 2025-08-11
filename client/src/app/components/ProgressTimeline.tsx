@@ -63,7 +63,6 @@ export default function ProgressTimeline() {
       const rect = barRef.current.getBoundingClientRect();
       let percent = ((clientX - rect.left) / rect.width) * 100;
 
-      // Clamp trong khoảng 0 - 100
       percent = Math.max(1, Math.min(99, percent));
       setDragPercent(percent);
 
@@ -160,7 +159,6 @@ export default function ProgressTimeline() {
           setDragging(true);
           handleMove(e.touches[0].clientX);
         }}
-        // KHÔNG reset selected tại đây để giữ giá trị cuối cùng
       >
         <div
           className="absolute h-4 bg-[#3D365C] rounded-full transition-all"
@@ -200,7 +198,6 @@ export default function ProgressTimeline() {
             }}
           >
             <div className="relative flex flex-col items-center">
-              {/* Tam giác bên dưới */}
               <div className="absolute w-0 h-0 border-l-[6.5px] border-r-[6.5px] border-t-[6px] border-l-transparent border-r-transparent border-t-[#7C4585]" />
               <div className="absolute top-[23px] rotate-180 w-0 h-0 border-l-[6.5px] border-r-[6.5px] border-t-[6px] border-l-transparent border-r-transparent border-t-[#7C4585]" />
             </div>

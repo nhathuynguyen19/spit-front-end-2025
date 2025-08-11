@@ -18,9 +18,7 @@ export default function AnimatedText() {
   useEffect(() => {
     if (!show) return;
 
-    // Thời gian giữ chữ hiện
     const holdTimer = setTimeout(() => {
-      // Bắt đầu ẩn chữ
       setShow(false);
     }, 3000);
 
@@ -30,11 +28,10 @@ export default function AnimatedText() {
   useEffect(() => {
     if (show) return;
 
-    // Thời gian hiệu ứng ẩn + delay chuyển sang chữ tiếp theo
     const hideTimer = setTimeout(() => {
       setIndex((i) => (i + 1) % messages.length);
       setShow(true);
-    }, 800); // phải tương ứng với duration fade out
+    }, 800);
 
     return () => clearTimeout(hideTimer);
   }, [show]);

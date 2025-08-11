@@ -50,7 +50,7 @@ const Button = ({ children, idName = "", onClick, isOpen }: ButtonProps) => {
               idName === "nghe-thuat" ||
               idName === "festival-info"
             ) {
-              offset = 50; // chỉ trừ 50px cho 2 id này
+              offset = 50;
             }
             const y = el.getBoundingClientRect().top + window.scrollY - offset;
             window.scrollTo({ top: y, behavior: "smooth" });
